@@ -170,7 +170,7 @@ chemical industry/
 13. **Ponder 文字必须加 lang 翻译**（key = `<modid>.ponder.<titleKey>.header/.text_N`），否则显示空白
 14. **Ponder 用原生 `builder`**（SceneBuilder），showSection 返回 void，要移动用 showIndependentSection
 
-## 当前进度 (v0.7.0)
+## 当前进度 (v0.8.0)
 
 ### ✅ 已完成
 - [x] 11 种矿石（+朱砂/方铅矿/锡石，各带深层变种）+ 世界生成 + 掉落表
@@ -190,13 +190,17 @@ chemical industry/
 - [x] 沸腾炉层容量规则（层总容量 = 方块数×8 桶，按流体种类平分）
 - [x] 电解配方简化（除铝外不需要催化剂/膜）
 - [x] 电解槽 Ponder 教程（6 幕剧本：搭建/动能/通电/电极/加热/爆炸警示）
+- [x] Ponder 扩展：沸腾炉 + 空气压缩机 + 空气分馏 + 冷凝管 4 个场景（电解槽模板）
+- [x] 成就树状化（parent 分层）+ "化学易如反掌"/"诺贝尔化学奖"隐藏成就
+- [x] 冷凝管结冰修复（耗气 10→2 mB/tick，与压缩机 32RPM 产量持平）
+- [x] git 版本管理初始化 + ponder-creator skill 发布 GitHub（双语 + Release v1.0.0）
 
 ### 🔜 待开发
-- [ ] Ponder 扩展：沸腾炉/冷凝管/空气压缩机教程（用 ponder-dev skill）
 - [ ] 有机化学配方完善
-- [ ] 新机器（离心机/萃取塔）
-- [ ] 美术 / 进度扩展
-- [ ] 银块/硬铝块已注册，待验证配方
+- [ ] 美术（正式贴图，发布前必需）
+- [ ] 银块/硬铝块配方验证
+- [ ] JEI 兼容
+- [ ] 模组整体发布（等美术完成后推 GitHub + Release）
 
 ## 代码规范
 
