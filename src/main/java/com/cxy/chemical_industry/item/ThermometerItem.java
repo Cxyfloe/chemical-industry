@@ -111,11 +111,13 @@ public class ThermometerItem extends Item {
     }
 
     /**
-     * 判断烈焰人燃烧室是否点燃（heat_level 属性不是 none）
+     * 判断烈焰人燃烧室是否点燃（热度属性不是 none）
+     * Create 6.0.9 属性名是 "blaze"（见 BlazeBurnerBlock.java:72），
+     * 兼容旧版/其他模组可能用的 "heat_level" 名
      */
     private static boolean isLitBlazeBurner(BlockState state) {
         for (Property<?> property : state.getProperties()) {
-            if (property.getName().equals("heat_level")) {
+            if (property.getName().equals("blaze") || property.getName().equals("heat_level")) {
                 return !"none".equals(state.getValue(property).toString());
             }
         }
