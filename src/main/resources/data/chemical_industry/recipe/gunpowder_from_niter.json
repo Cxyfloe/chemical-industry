@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemical_industry:sulfur_powder"
+    },
+    {
+      "item": "chemical_industry:potassium_nitrate"
+    },
+    {
+      "item": "chemical_industry:potassium_nitrate"
+    },
+    {
+      "tag": "chemical_industry:carbon_sources"
+    },
+    {
+      "tag": "chemical_industry:carbon_sources"
+    },
+    {
+      "tag": "chemical_industry:carbon_sources"
+    }
+  ],
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 1
+  }
+}

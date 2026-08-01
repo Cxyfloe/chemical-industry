@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": { "cross": "chemical_industry:block/opium_poppy_stage1" }
+}

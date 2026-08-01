@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chemical_industry:block/sodium_carbonate_solution_still"
+  }
+}

@@ -1,0 +1,1 @@
+{"type":"create:mixing","ingredients":[{"item":"chemical_industry:copper_oxide"},{"type":"fluid_stack","fluid":"chemical_industry:sulfuric_acid","amount":1000}],"results":[{"id":"chemical_industry:copper_sulfate_solution","amount":1000}],"heatRequirement":"heated"}

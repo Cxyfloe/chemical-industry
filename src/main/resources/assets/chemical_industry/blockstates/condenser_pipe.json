@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chemical_industry:block/condenser_pipe"
+    },
+    "facing=east": {
+      "model": "chemical_industry:block/condenser_pipe",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemical_industry:block/condenser_pipe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemical_industry:block/condenser_pipe",
+      "y": 270
+    }
+  }
+}

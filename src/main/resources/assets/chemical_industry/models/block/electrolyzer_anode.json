@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "top": "chemical_industry:block/electrolyzer_top",
+        "front": "chemical_industry:block/electrolyzer_front_anode",
+        "side": "chemical_industry:block/electrolyzer_side"
+    }
+}

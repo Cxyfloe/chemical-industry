@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chemical_industry:magnesium_nugget"
+    }
+  },
+  "result": {
+    "id": "chemical_industry:magnesium_ingot",
+    "count": 1
+  }
+}

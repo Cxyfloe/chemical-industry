@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "P P",
+        "PIP",
+        "P P"
+    ],
+    "key": {
+        "P": { "item": "minecraft:paper" },
+        "I": { "item": "minecraft:iron_ingot" }
+    },
+    "result": {
+        "id": "chemical_industry:cation_exchange_membrane",
+        "count": 2
+    }
+}

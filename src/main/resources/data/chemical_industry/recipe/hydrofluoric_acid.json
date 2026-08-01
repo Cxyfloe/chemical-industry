@@ -1,0 +1,11 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "minecraft:glowstone_dust" },
+    { "type": "fluid_stack", "fluid": "chemical_industry:sulfuric_acid", "amount": 250 }
+  ],
+  "results": [
+    { "id": "chemical_industry:hydrofluoric_acid", "amount": 250 }
+  ],
+  "heatRequirement": "heated"
+}

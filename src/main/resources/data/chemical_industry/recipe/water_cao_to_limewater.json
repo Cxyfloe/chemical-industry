@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "minecraft:water",
+      "amount": 500
+    },
+    {
+      "item": "chemical_industry:calcium_oxide"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:limewater",
+      "amount": 500
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:aluminum_ingot"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.aluminum_ingot.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.aluminum_ingot.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:first_electrolysis",
+  "criteria": {
+    "alu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "chemical_industry:aluminum_ingot"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:phenol",
+      "amount": 250
+    },
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:formaldehyde",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:phenolic_resin",
+      "amount": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}

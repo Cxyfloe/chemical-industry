@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:phenol",
+      "amount": 250
+    },
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:nitric_acid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:picric_acid",
+      "amount": 1
+    }
+  ]
+}

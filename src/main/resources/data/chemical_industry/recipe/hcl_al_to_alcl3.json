@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:hydrochloric_acid",
+      "amount": 500
+    },
+    {
+      "item": "chemical_industry:aluminum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:aluminum_chloride",
+      "amount": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}

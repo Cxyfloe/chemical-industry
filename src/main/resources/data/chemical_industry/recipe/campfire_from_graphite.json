@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "item": "chemical_industry:graphite"
+    }
+  ],
+  "result": {
+    "id": "minecraft:campfire",
+    "count": 1
+  }
+}

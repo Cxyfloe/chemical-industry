@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "chemical_industry:nacl_solution",
+        "chemical_industry:sulfuric_acid",
+        "chemical_industry:sodium_hydroxide_solution",
+        "chemical_industry:copper_sulfate_solution",
+        "chemical_industry:hydrochloric_acid",
+        "chemical_industry:nitric_acid",
+        "chemical_industry:sodium_aluminate_solution",
+        "chemical_industry:sodium_sulfate_solution",
+        "chemical_industry:sodium_nitrate_solution",
+        "chemical_industry:potassium_nitrate_solution"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:compressed_air",
+      "amount": 200
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {"id": "chemical_industry:oxygen_gas", "amount": 210},
+    {"id": "chemical_industry:nitrogen_gas", "amount": 780},
+    {"id": "chemical_industry:rare_gas", "amount": 10}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:coal_tar",
+      "amount": 200
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "createdieselgenerators:gasoline",
+      "amount": 70
+    },
+    {
+      "id": "chemical_industry:benzene",
+      "amount": 60
+    },
+    {
+      "id": "createdieselgenerators:diesel",
+      "amount": 70
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemical_industry:magnesium_ingot"
+    }
+  ],
+  "result": {
+    "id": "chemical_industry:magnesium_nugget",
+    "count": 9
+  }
+}

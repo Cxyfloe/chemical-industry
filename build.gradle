@@ -1,0 +1,144 @@
+// ============================================================
+// build.gradle — 构建脚本
+// 作用：
+// 1. 声明模组依赖（NeoForge + Create）
+// 2. 配置运行配置（client / server / data）
+// 3. 设置 Java 编译选项
+// ============================================================
+
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    // NeoGradle userdev 插件：提供 Minecraft 反编译环境
+    id 'net.neoforged.gradle.userdev'
+}
+
+// ---------- 基本信息 ----------
+version = mod_version           // 从 gradle.properties 读取
+group = mod_group_id
+base.archivesName = mod_id      // 生成的 jar 文件名
+
+// ---------- 仓库声明 ----------
+// 这里声明从哪里下载依赖
+repositories {
+    mavenLocal()    // 本地 Maven 仓库（优先级最高）
+
+    // Create 模组的官方 Maven 仓库
+    maven {
+        name = 'Createmod Maven'
+        url = 'https://maven.createmod.net'
+    }
+
+    // Registrate 库（Create 的注册工具库）
+    maven {
+        name = 'tterrag Maven'
+        url = 'https://maven.tterrag.com/'
+    }
+
+    // CurseMaven（备用，格式：curse.maven:<模组名>-<项目ID>:<文件ID>）
+    maven {
+        name = 'CurseMaven'
+        url = 'https://cursemaven.com'
+    }
+}
+
+// ---------- 模组 ID 常量 ----------
+// 注意：Parchment 映射暂未启用（版本号需要与实际发布版本对齐）
+// 如需可读的参数名，请取消注释并填写正确的 mappingsVersion
+// subsystems {
+//     parchment {
+//         minecraftVersion = "${minecraft_version}"
+//         mappingsVersion = "2024.07.28"
+//     }
+// }
+
+// ---------- Java 版本 ----------
+// NeoForge 1.21.1 要求使用 Java 21
+java.toolchain.languageVersion = JavaLanguageVersion.of(java_version)
+
+// ---------- 运行配置 ----------
+// 定义三种运行模式：客户端、服务器、数据生成
+runs {
+    // 客户端运行（最常用：gradlew runClient）
+    client {
+        systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        // 如果你使用 IntelliJ IDEA，取消下面这行注释
+        // jvmArgument '-javaagent:${System.env.USERPROFILE}/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/...'
+    }
+
+    // 服务器运行（调试用：gradlew runServer）
+    server {
+        systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        programArgument '--nogui'   // 不显示 GUI
+    }
+
+    // 数据生成（自动生成 JSON 配方等：gradlew runData）
+    data {
+        programArguments.addAll '--mod', project.mod_id,
+                '--all',
+                '--output', file('src/generated/resources/').getAbsolutePath(),
+                '--existing', file('src/main/resources/').getAbsolutePath()
+    }
+}
+
+// ---------- 源代码路径 ----------
+// 数据生成产生的文件也会被加载
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+// ---------- 依赖声明 ----------
+dependencies {
+    // NeoForge 加载器（核心依赖，必须）
+    implementation "net.neoforged:neoforge:${neo_version}"
+
+    // Create 模组（机械动力）— 直接使用本地 jar 文件
+    // jar 文件名中的方括号是中文习惯的标注，Java/Gradle 可以正常识别
+    implementation files('libs/[机械动力] create-1.21.1-6.0.9.jar')
+
+    // Ponder API（Create 内部依赖，KineticBlockEntity 需要）
+    implementation "net.createmod.ponder:ponder-neoforge:1.0.87+mc1.21.1"
+
+    // Create: Diesel Generators（分馏塔依赖）
+    implementation files('libs/[机械动力：柴油动力] createdieselgenerators-1.21.1-1.3.8.jar')
+
+    // 如果需要 JEI（Just Enough Items，配方查看模组），取消注释：
+    // compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:19.8.0.100"
+    // runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:19.8.0.100"
+}
+
+// ---------- JAR 清单属性 ----------
+// 标记这个 jar 文件是 NeoForge 模组
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: "[${minecraft_version},1.22)",
+            neo_version            : neo_version,
+            neo_version_range      : "[${neo_version.split(/\./).take(2).join('.')},22)",
+            loader_version_range   : "[4,5)",
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description,
+            create_version         : create_version
+    ]
+    // 替换 neoforge.mods.toml 中的 ${变量}
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/neoforge.mods.toml']) {
+        expand replaceProperties
+    }
+}
+
+// ---------- Java 编译选项 ----------
+// 显示中文编译错误信息
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// ---------- IDEA 集成 ----------
+// 让 IntelliJ IDEA 把生成的资源目录也识别为源码目录
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}

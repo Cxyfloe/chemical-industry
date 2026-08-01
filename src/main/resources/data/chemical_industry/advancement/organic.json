@@ -1,0 +1,1 @@
+{"display":{"icon":{"id":"chemical_industry:urea"},"title":{"translate":"advancement.chemical_industry.organic.title"},"description":{"translate":"advancement.chemical_industry.organic.desc"},"frame":"challenge","show_toast":true,"announce_to_chat":true,"hidden":false},"parent":"chemical_industry:root","criteria":{"org":{"trigger":"minecraft:impossible"}}}

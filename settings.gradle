@@ -1,0 +1,24 @@
+// ============================================================
+// settings.gradle — 项目根设置
+// 作用：声明插件仓库和项目名称
+// ============================================================
+
+pluginManagement {
+    repositories {
+        // NeoForge 官方插件仓库
+        maven { url = 'https://maven.neoforged.net/releases' }
+        // Gradle 官方插件仓库
+        gradlePluginPortal()
+        // Maven Central（备用）
+        mavenCentral()
+    }
+}
+
+plugins {
+    // NeoGradle 插件版本（NeoForge 的构建工具）
+    // 7.0.x 系列兼容 Minecraft 1.21.1
+    id 'net.neoforged.gradle.userdev' version '7.0.145'
+}
+
+// 项目名称
+rootProject.name = 'chemical-industry'

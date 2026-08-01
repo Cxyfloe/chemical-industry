@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:gas_canister"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.rare_gas.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.rare_gas.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:oxygen",
+  "criteria": {
+    "rare": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

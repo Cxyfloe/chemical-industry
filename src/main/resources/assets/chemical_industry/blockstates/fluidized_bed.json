@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "layer=bottom,lit=false": { "model": "chemical_industry:block/fluidized_bed" },
+        "layer=bottom,lit=true":  { "model": "chemical_industry:block/fluidized_bed_lit" },
+        "layer=middle,lit=false": { "model": "chemical_industry:block/fluidized_bed" },
+        "layer=middle,lit=true":  { "model": "chemical_industry:block/fluidized_bed_lit" },
+        "layer=top,lit=false":    { "model": "chemical_industry:block/fluidized_bed" },
+        "layer=top,lit=true":     { "model": "chemical_industry:block/fluidized_bed_lit" }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemical_industry:graphite_block"
+    }
+  ],
+  "result": {
+    "id": "chemical_industry:graphite",
+    "count": 9
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chemical_industry:tin_ingot"
+    }
+  },
+  "result": {
+    "id": "chemical_industry:tin_block",
+    "count": 1
+  }
+}

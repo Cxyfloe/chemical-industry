@@ -1,0 +1,1 @@
+{"display":{"icon":{"id":"chemical_industry:gas_canister"},"title":{"translate":"advancement.chemical_industry.oxygen.title"},"description":{"translate":"advancement.chemical_industry.oxygen.desc"},"frame":"task","show_toast":true,"announce_to_chat":true,"hidden":false},"parent":"chemical_industry:first_electrolysis","criteria":{"o2":{"trigger":"minecraft:impossible"}}}

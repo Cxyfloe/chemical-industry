@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:ammonia_water",
+      "amount": 500
+    },
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:aluminum_chloride_solution",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:alumina",
+      "amount": 1
+    }
+  ]
+}

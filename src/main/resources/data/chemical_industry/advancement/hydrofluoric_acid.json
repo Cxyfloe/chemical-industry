@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:hydrofluoric_acid_bucket"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.hydrofluoric_acid.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.hydrofluoric_acid.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:sulfuric_acid",
+  "criteria": {
+    "hf": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

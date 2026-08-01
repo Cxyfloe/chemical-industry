@@ -1,0 +1,1 @@
+{"variants":{"facing":{"north":{"model":"chemical_industry:block/air_compressor","y":180},"south":{"model":"chemical_industry:block/air_compressor"},"east":{"model":"chemical_industry:block/air_compressor","y":270},"west":{"model":"chemical_industry:block/air_compressor","y":90}}}}

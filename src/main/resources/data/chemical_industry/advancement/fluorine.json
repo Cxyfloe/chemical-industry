@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:gas_canister"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.fluorine.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.fluorine.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:hydrofluoric_acid",
+  "criteria": {
+    "f2": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

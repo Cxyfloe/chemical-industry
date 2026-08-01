@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:benzene"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.benzene.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.benzene.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:organic",
+  "criteria": {
+    "bz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "chemical_industry:benzene"
+          }
+        ]
+      }
+    }
+  }
+}

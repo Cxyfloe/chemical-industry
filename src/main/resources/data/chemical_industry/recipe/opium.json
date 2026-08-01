@@ -1,0 +1,11 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "chemical_industry:opium_poppy_fruit" },
+    { "type": "fluid_stack", "fluid": "minecraft:water", "amount": 250 }
+  ],
+  "results": [
+    { "id": "chemical_industry:opium", "amount": 1 }
+  ],
+  "heatRequirement": "heated"
+}

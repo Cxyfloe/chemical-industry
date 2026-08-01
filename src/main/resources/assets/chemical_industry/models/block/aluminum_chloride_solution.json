@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chemical_industry:block/aluminum_chloride_solution_still"
+  }
+}

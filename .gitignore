@@ -1,0 +1,25 @@
+# ============================================
+# .gitignore — 告诉 git 哪些文件不用管理
+# ============================================
+
+# Gradle 构建产物（可重新生成，不用存档）
+build/
+.gradle/
+
+# 本地 jar 依赖（第三方库，体积大，不入库）
+libs/
+*.jar
+
+# Create 等模组源码参考目录（只读参考，不是本项目代码）
+Create-mc1.21.1-6.0.9/
+create craft & additions/
+Create-Diesel-Generators-/
+
+# IDE 配置文件（每人电脑不同，不入库）
+.idea/
+*.iml
+.vscode/
+
+# 系统文件
+Thumbs.db
+.DS_Store

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "chemical_industry:block/electrolyzer_top",
+        "bottom": "chemical_industry:block/electrolyzer_bottom",
+        "side": "chemical_industry:block/electrolyzer_side"
+    }
+}

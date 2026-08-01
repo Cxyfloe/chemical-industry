@@ -1,0 +1,1 @@
+{"type":"create:mixing","ingredients":[{"item":"chemical_industry:cryolite"},{"type":"fluid_stack","fluid":"chemical_industry:sodium_aluminate_solution","amount":1000}],"results":[{"id":"chemical_industry:alumina","amount":2}],"heatRequirement":"heated"}

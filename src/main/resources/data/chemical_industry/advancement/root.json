@@ -1,0 +1,1 @@
+{"display":{"icon":{"id":"chemical_industry:sulfur_powder"},"title":{"translate":"advancement.chemical_industry.root.title"},"description":{"translate":"advancement.chemical_industry.root.desc"},"background":"chemical_industry:textures/gui/advancements.png","frame":"task","show_toast":false,"announce_to_chat":false,"hidden":false},"criteria":{"tick":{"trigger":"minecraft:tick"}}}

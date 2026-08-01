@@ -1,0 +1,57 @@
+# ============================================================
+# neoforge.mods.toml — 模组元信息文件
+# NeoForge 启动时会读取这个文件，了解模组的基本信息
+# 语法：TOML 格式
+# ============================================================
+
+# 文件版本（NeoForge 的配置格式版本，不要改）
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+
+# 许可协议
+license = "MIT"
+
+# 本模组使用的功能标记
+# 如果不需要特殊功能，保持空数组即可
+[[mods]]
+    # ---------- 模组基本信息 ----------
+    modId = "${mod_id}"
+    version = "${mod_version}"
+    displayName = "${mod_name}"
+
+    # 模组 Logo（显示在模组列表中）
+    # logoFile = "logo.png"
+
+    # 模组描述（支持多行）
+    description = "${mod_description}"
+
+    # 作者列表
+    authors = "${mod_authors}"
+
+    # ---------- 依赖关系 ----------
+    # 每个 [[mods.dependencies]] 块声明一个依赖
+    [[mods.dependencies]]
+        # NeoForge 加载器依赖（必须）
+        modId = "neoforge"
+        type = "required"
+        versionRange = "${neo_version_range}"
+        ordering = "NONE"
+        side = "BOTH"
+
+    [[mods.dependencies]]
+        # Minecraft 版本依赖（必须）
+        modId = "minecraft"
+        type = "required"
+        versionRange = "${minecraft_version_range}"
+        ordering = "NONE"
+        side = "BOTH"
+
+    [[mods.dependencies]]
+        # Create 模组依赖（必须 — 因为我们是附属模组）
+        modId = "create"
+        type = "required"
+        versionRange = "[${create_version},7.0)"
+        ordering = "AFTER"       # 在 Create 之后加载
+        side = "BOTH"
+
+# 如果将来添加了更多附属模组，可以在这里声明新的 [[mods]] 块

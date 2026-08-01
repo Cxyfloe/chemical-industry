@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "chemical_industry:block/condenser_pipe_side",
+    "north": "chemical_industry:block/condenser_pipe_front",
+    "south": "chemical_industry:block/condenser_pipe_back",
+    "east": "chemical_industry:block/condenser_pipe_side",
+    "west": "chemical_industry:block/condenser_pipe_side",
+    "up": "chemical_industry:block/condenser_pipe_side",
+    "down": "chemical_industry:block/condenser_pipe_side"
+  }
+}

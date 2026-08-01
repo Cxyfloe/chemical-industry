@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "chemical_industry:tin_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:bronze_ingot",
+      "amount": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}

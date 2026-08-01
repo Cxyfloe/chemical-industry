@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "part=cathode,facing=north": {"model":"chemical_industry:block/electrolyzer_cathode"},
+        "part=cathode,facing=east":  {"model":"chemical_industry:block/electrolyzer_cathode","y":90},
+        "part=cathode,facing=south": {"model":"chemical_industry:block/electrolyzer_cathode","y":180},
+        "part=cathode,facing=west":  {"model":"chemical_industry:block/electrolyzer_cathode","y":270},
+        "part=center,facing=north": {"model":"chemical_industry:block/electrolyzer_center"},
+        "part=center,facing=east":  {"model":"chemical_industry:block/electrolyzer_center","y":90},
+        "part=center,facing=south": {"model":"chemical_industry:block/electrolyzer_center","y":180},
+        "part=center,facing=west":  {"model":"chemical_industry:block/electrolyzer_center","y":270},
+        "part=anode,facing=north": {"model":"chemical_industry:block/electrolyzer_anode"},
+        "part=anode,facing=east":  {"model":"chemical_industry:block/electrolyzer_anode","y":90},
+        "part=anode,facing=south": {"model":"chemical_industry:block/electrolyzer_anode","y":180},
+        "part=anode,facing=west":  {"model":"chemical_industry:block/electrolyzer_anode","y":270}
+    }
+}

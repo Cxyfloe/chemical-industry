@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["###","###","###"], "key": {"#": {"item": "chemical_industry:silver_ingot"}}, "result": {"id": "chemical_industry:silver_block"}}

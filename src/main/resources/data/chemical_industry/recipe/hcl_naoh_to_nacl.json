@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:hydrochloric_acid",
+      "amount": 500
+    },
+    {
+      "type": "fluid_stack",
+      "fluid": "chemical_industry:sodium_hydroxide_solution",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "chemical_industry:nacl_solution",
+      "amount": 500
+    }
+  ]
+}

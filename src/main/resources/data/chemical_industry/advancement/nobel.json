@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:platinum_concentrate"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.nobel.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.nobel.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "chemical_industry:easy_chemistry",
+  "criteria": {
+    "all": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "chemical_industry:anode_slime"
+    },
+    "title": {
+      "translate": "advancement.chemical_industry.anode_slime.title"
+    },
+    "description": {
+      "translate": "advancement.chemical_industry.anode_slime.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "chemical_industry:first_electrolysis",
+  "criteria": {
+    "slime": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "chemical_industry:anode_slime"
+          }
+        ]
+      }
+    }
+  }
+}
