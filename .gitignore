@@ -29,3 +29,10 @@ __pycache__/
 # MC 客户端反编译源码（参考用，有版权，不入库）
 Minecraft/
 .claude/
+
+# 私人文档（不发布）
+CLAUDE.md
+开发计划.md
+待检验事宜.md
+配方模板.xlsx
+项目结构.md
