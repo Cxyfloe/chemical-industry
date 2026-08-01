@@ -52,7 +52,7 @@ Bring the modern chemical industry into Minecraft: from your first chunk of sulf
 
 ## About development
 
-This mod was developed via **vibe coding**: I design the gameplay, work out the progression, and test in-game; the AI writes the code, looks up APIs, and produces textures and Ponder scenes. The code may not be textbook, but every mechanic has been verified in actual gameplay.
+This mod was developed via **vibe coding**: I design the gameplay, work out the progression, and test in-game; the AI writes the code, calls APIs, and creates Ponder tutorials. The code may not be textbook, but every mechanic has been verified in actual gameplay.
 
 ## Credits
 
