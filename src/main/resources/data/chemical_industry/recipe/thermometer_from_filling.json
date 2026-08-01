@@ -1,0 +1,10 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {"item": "minecraft:glass"},
+    {"type": "fluid_stack", "fluid": "chemical_industry:mercury", "amount": 1000}
+  ],
+  "results": [
+    {"id": "chemical_industry:thermometer", "amount": 1}
+  ]
+}

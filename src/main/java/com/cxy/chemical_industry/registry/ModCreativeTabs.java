@@ -200,6 +200,9 @@ public class ModCreativeTabs {
                         output.accept(ModFluids.SODIUM_CARBONATE_SOLUTION.bucket.get());
                         output.accept(ModFluids.HYDROFLUORIC_ACID.bucket.get());
                         output.accept(ModFluids.MERCURY.bucket.get());
+
+                        // ---- 仪器 ----
+                        output.accept(ModItems.THERMOMETER.get());
                     })
                     .build()
     );

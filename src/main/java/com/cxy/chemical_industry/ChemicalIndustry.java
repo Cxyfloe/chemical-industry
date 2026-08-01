@@ -123,5 +123,25 @@ public class ChemicalIndustry {
             event.register(ModMenus.FLUIDIZED_BED_MENU.get(), FluidizedBedScreen::new);  // 沸腾炉物品控制器
             event.register(ModMenus.ELECTROLYZER_MENU.get(), ElectrolyzerScreen::new);
         }
+
+        /**
+         * 注册温度计的"活指针"属性（模仿指南针 angle）
+         * 属性值 = 环境温度 0~1，模型按值切换 16 帧指针贴图
+         */
+        @SubscribeEvent
+        public static void registerItemProperties(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                net.minecraft.client.renderer.item.ItemProperties.register(
+                        ModItems.THERMOMETER.get(),
+                        net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(MOD_ID, "temperature"),
+                        (stack, level, entity, seed) -> {
+                            // 没有可用的实体/世界时返回中间值（指针居中）
+                            if (level == null || entity == null) {
+                                return 0.5F;
+                            }
+                            return com.cxy.chemical_industry.item.ThermometerItem.getTemperatureValue(level, entity.blockPosition());
+                        });
+            });
+        }
     }
 }

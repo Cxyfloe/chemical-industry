@@ -59,6 +59,7 @@ chemical industry/
 ├── generate_textures.js       # 批量生成纯色占位贴图
 ├── libs/                      # 本地 jar 依赖（含 ponder 库）
 ├── .claude/skills/ponder-dev/ # Ponder 开发 skill（手册+脚本+模板）
+├── Minecraft/                 # MC 客户端反编译源码（查 API 直接看，比反编译 jar 快）
 ├── Create-mc1.21.1-6.0.9/    # Create 源码（参考）
 ├── create craft & additions/  # CA 源码（参考）
 ├── Create-Diesel-Generators-/ # DG 源码（参考）
@@ -153,7 +154,15 @@ chemical industry/
 - 玩家搭场景 → parse_scene.py 解析布局 → 按实际坐标写代码
 - 翻译 key 用 `scene.title()` 第一个参数（不是 storyboard 名）
 
-### 8. 高频错误清单
+### 8. 活物品渲染（仿指南针/钟，温度计已验证）
+
+- 1.21.1 指南针指针 = **ItemProperties 注册 predicate + 模型 overrides 切换 N 帧贴图**（不是旋转模型）
+- 注册：`ItemProperties.register(物品, modid:温度名, (stack, level, entity, seed) -> 0~1)`（放在主类 ClientEvents 的 FMLClientSetupEvent）
+- 模型：base json + `overrides: [{predicate: {modid:温度名: x}, model: 帧模型}]`（值递增到 1.0）
+- 帧贴图：python 脚本批量生成（见 generate_thermometer.py）
+- `BlockState.is()` 不接受 ResourceLocation，用 `getBlockHolder().is(ResourceLocation)`
+
+### 9. 高频错误清单
 
 1. **GUI 槽位处理器必须用 IItemHandlerModifiable**，否则打开 GUI 闪退
 2. **方块转换/BE 销毁前先收集信息**（先读再改）

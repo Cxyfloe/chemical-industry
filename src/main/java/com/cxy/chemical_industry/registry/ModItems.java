@@ -2,6 +2,7 @@ package com.cxy.chemical_industry.registry;
 
 import com.cxy.chemical_industry.ChemicalIndustry;
 import com.cxy.chemical_industry.item.GasCanisterItem;
+import com.cxy.chemical_industry.item.ThermometerItem;
 import com.cxy.chemical_industry.item.TooltipBlockItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -331,6 +332,14 @@ public class ModItems {
     public static final DeferredItem<GasCanisterItem> GAS_CANISTER = ITEMS.register(
             "gas_canister",
             GasCanisterItem::new
+    );
+
+    // ========== 温度计（水银用途） ==========
+
+    /** 温度计 — 玻璃罐装水银（spout 填充），指针随环境温度指向红/蓝 */
+    public static final DeferredItem<ThermometerItem> THERMOMETER = ITEMS.register(
+            "thermometer",
+            () -> new ThermometerItem(new Item.Properties().stacksTo(1))
     );
 
     // ========== 方块物品 (BlockItem) — 矿石类（带 Shift 提示）==========

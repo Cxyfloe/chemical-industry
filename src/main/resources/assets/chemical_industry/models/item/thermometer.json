@@ -1,0 +1,98 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chemical_industry:item/thermometer_00"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.0667
+      },
+      "model": "chemical_industry:item/thermometer_01"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.1333
+      },
+      "model": "chemical_industry:item/thermometer_02"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.2
+      },
+      "model": "chemical_industry:item/thermometer_03"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.2667
+      },
+      "model": "chemical_industry:item/thermometer_04"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.3333
+      },
+      "model": "chemical_industry:item/thermometer_05"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.4
+      },
+      "model": "chemical_industry:item/thermometer_06"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.4667
+      },
+      "model": "chemical_industry:item/thermometer_07"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.5333
+      },
+      "model": "chemical_industry:item/thermometer_08"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.6
+      },
+      "model": "chemical_industry:item/thermometer_09"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.6667
+      },
+      "model": "chemical_industry:item/thermometer_10"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.7333
+      },
+      "model": "chemical_industry:item/thermometer_11"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.8
+      },
+      "model": "chemical_industry:item/thermometer_12"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.8667
+      },
+      "model": "chemical_industry:item/thermometer_13"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 0.9333
+      },
+      "model": "chemical_industry:item/thermometer_14"
+    },
+    {
+      "predicate": {
+        "chemical_industry:temperature": 1.0
+      },
+      "model": "chemical_industry:item/thermometer_15"
+    }
+  ]
+}
