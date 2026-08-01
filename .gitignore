@@ -28,3 +28,4 @@ __pycache__/
 
 # MC 客户端反编译源码（参考用，有版权，不入库）
 Minecraft/
+.claude/
