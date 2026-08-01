@@ -25,3 +25,6 @@ Thumbs.db
 .DS_Store
 __pycache__/
 *.pyc
+
+# MC 客户端反编译源码（参考用，有版权，不入库）
+Minecraft/
